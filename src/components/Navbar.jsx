@@ -22,6 +22,7 @@ function Navbar() {
             <li className="nav-item"><Link className="nav-link fs-5" to="/fleet">Fleet</Link></li>
             <li className="nav-item"><Link className="nav-link fs-5" to="/rental">Rental</Link></li>
             <li className="nav-item"><Link className="nav-link fs-5" to="/contact">Contact</Link></li>
+            <li className="nav-item"><Link className="nav-link fs-5" to="/pricelist">Pricing</Link></li>
           </ul>
         </div>
       </div>
