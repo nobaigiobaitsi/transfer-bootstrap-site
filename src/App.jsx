@@ -8,17 +8,20 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/fleet" element={<Fleet />} />
-        <Route path="/rental" element={<Rental />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="flex-grow-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fleet" element={<Fleet />} />
+          <Route path="/rental" element={<Rental />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
+
 
 export default App;

@@ -2,18 +2,22 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container">
-        <Link className="navbar-brand" to="/">TransferCo</Link>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><Link className="nav-link" to="/fleet">Fleet</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/rental">Rental</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav className="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+  <div className="container-fluid">
+    <Link className="navbar-brand fs-3" to="/">TransferCo</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item"><Link className="nav-link fs-5" to="/fleet">Fleet</Link></li>
+        <li className="nav-item"><Link className="nav-link fs-5" to="/services">Services</Link></li>
+        <li className="nav-item"><Link className="nav-link fs-5" to="/contact">Contact</Link></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   );
 }
 

@@ -1,4 +1,4 @@
 function Contact() {
-  return <div className="container">Contact us at info@transferco.com</div>;
+  return <div className="container-fluid">Contact us at info@transferco.com</div>;
 }
 export default Contact;
